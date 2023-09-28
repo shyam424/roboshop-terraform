@@ -5,9 +5,6 @@ module "components" {
 
   zone_id           = var.zone_id
   security_groups   = var.security_group
-
-
-
   name              = each.value ["name"]
   instance_type     = each.value ["instance_type"]
 
